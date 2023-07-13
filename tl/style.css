@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.timeline {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.timeline-item {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+
+.timeline-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  margin: 0 15px;
+  background-color: #333;
+}
+
+.timeline-item.active .timeline-circle {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.circle-1 {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.circle-2 {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.circle-3 {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.circle-4 {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.timeline-text {
+  font-size: 14px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+}
+.star {
+  color: #f9c222;
+}
+
+/* footer */
+.kotak {
+  position: relative;
+  top: 30px;
+  width: 70%;
+  margin: auto;
+  z-index: 1;
+}
+.kotak-biru {
+  padding-top: 40px;
+}
