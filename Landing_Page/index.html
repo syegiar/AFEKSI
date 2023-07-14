@@ -14,368 +14,352 @@
     <link rel="stylesheet" href="css/coba.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <section>
-      <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="assets/logo.png" alt="AFEKSI" width="100" />
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Beranda</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#layanan">Layanan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kegiatan">Kegiatan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tentang Kami</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Karir</a>
-              </li>
-            </ul>
-            <div>
-              <button
-                type="button"
-                class="btn btn-outline-warning custom-button"
-              >
-                Login
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="container banner">
-        <div class="container mb-5">
-          <h2 class="display-6 fw-bold text-light">
-            Bersama dan berdampingan <br />
-            menciptakan hubungan <br />
-            yang sehat di seluruh dunia
-          </h2>
-          <p class="fs-5 text-light">
-            Bercerita dan Berbagi rasa. Tenangkan <br />
-            hati dan tenangkan diri
-          </p>
-          <button class="btn btn-warning btn-lg custom-button" type="button">
-            Mulai Konsultasi
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Kegiatan -->
-    <section id="kegiatan">
-      <div
-      class="container p-5 mb-4 mt-4 rounded-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h4 class="text-dark mx-auto mb-5 w-50">Ikuti kegiatan yang sedang <br> berlangsung</h4>
-          </div>
-          <div class="col">
-            <div
-              class="card float-end me-2 p-3 "
-              style="width: 65%; border-radius: 5%; background-color: rgb(84,94,215,0.8);"
-            >
-              <div class="card-body text-center">
-                <img
-                  src="assets/live2.jpg"
-                  alt=""
-                  width="100%"
-                  height="320px"
-                  style="border-radius: 4%"
-                />
-                <p class="mt-3">
-                  <a href="#" class="btn btn-warning">Live Streaming</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div
-              class="card ms-2 p-3"
-              style="width: 65%; border-radius: 3%;background-color: rgb(84,94,215,0.8);">
-              <div class="card-body text-center">
-                <img
-                  src="assets/challange.jpg"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                  style="border-radius: 4%"
-                />
-                <p class="mt-3">
-                  <a href="#" class="btn btn-warning">Challange</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-    <!-- Konsultasi-->
-    <section id="konsultasi">
-<div class="container-fluid konsultasi pt-5 pb-5">
-  <div class="container text-center">
-    <h4>4 langkah Mudah <br> Melakukan Konsultasi</h4>
-  </div>
 
-  <div class="container">
-    <div class="row pt-4 mx-auto justify-content-center">
-        <div class="col-md-3 text-center">
-            <img src="assets/paket.jpg" alt="" srcset="" class="w-50">
-            <h6 class="mt-3">Pilih Paket</h6>
-            <p>Pilih paket yang Anda <br> inginkan </p>
-        </div>
-        <div class="col-md-3  text-center">
-            <img src="assets/psikolog.jpg" alt="" srcset="" class="w-50">
-            <h6 class="mt-3">Pilih Psikolog</h6>
-            <p>Pilih psikolog sesuai <br>dengan masalah yang <br> Anda hadapi </p>
-        </div>
-        <div class="col-md-3  text-center">
-            <img src="assets/login.jpg" alt="" srcset="" class="w-50">
-            <h6 class="mt-3">Isi Identitas & Mengatur Jadwal</h6>
-            <p>Isilah Identitas dan <br> atur jadwal konsultasi</p>
-        </div>
-        <div class="col-md-3  text-center">
-            <img src="assets/payment.jpg" alt="" srcset="" class="w-50">
-            <h6 class="mt-3">Pembayaran</h6>
-            <p>Lakukan Pembayaran <br> untuk bisa mengikuti <br> konseling </p>
-        </div>
-    </div>
-</div>
+
+   
+    <!-- NAVBAR
+    ============================================================================ -->
+    <section>
+      <div class="mx-5">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="assets/logo.png" alt="" class="nav-logo">
+          </a>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5 fw-semibold">
+            <li><a href="#beranda" class="nav-link px-2 link-dark">Beranda</a></li>
+            <li><a href="#layanan" class="nav-link px-2 link-secondary">Layanan</a></li>
+            <li><a href="#kegiatan" class="nav-link px-2 link-secondary">Kegiatan</a></li>
+            <li><a href="#tentang" class="nav-link px-2 link-secondary">Tentang Kami</a></li>
+            <li><a href="#faq" class="nav-link px-2 link-secondary">FAQ</a></li>
+            <li><a href="#karir" class="nav-link px-2 link-secondary">Karir</a></li>
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-lg btn-warning w-50">Login</button>
+          </div>
+        </header>
+      </div>
     </section>
-    <!-- Profil Psikolog -->
+
+
+
+    <!-- HERO
+    ==================================================================== -->
+    <section id="hero">
+      <div class="bg-hero">
+        <div class="banner-headline">
+            <div class="mb-5">
+            <h1 class="display-6 fw-bold text-light">
+              Bersama dan berdampingan <br />
+              menciptakan hubungan <br />
+              yang sehat di seluruh dunia
+            </h1>
+            <p class="fs-5 text-light">
+              Bercerita dan Berbagi rasa. Tenangkan <br />
+              hati dan tenangkan diri
+            </p>
+            <button class="btn btn-warning btn-lg custom-button w-50" type="button">
+              Mulai Konsultasi
+            </button>
+          </div>
+        </div>
+        <div class="banner float-start">
+          <img src="assets/img/sect-1-bg-2.png" alt="float-end">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ACTIVITY
+    ================================================================ -->
+    <section id="kegiatan">
+      <div class="container p-5 mb-5 rounded-3">
+      <div class="container-fluid">
+          <h1 class="text-dark text-center mx-auto mb-5 mt-5 w-50">Ikuti kegiatan yang sedang <br> berlangsung</h1>
+          <div class="row">
+            <div class="col ">
+              <div class="sect-2-box float-end text-center rounded-4">
+                <div class="card rounded-4">
+                  <div class="card-body">
+                    <img src="assets/img/sect-2-img-1.png" alt=""/>
+                  </div>
+                </div>
+                <p class="mt-5">
+                <a href="#" class="btn btn-lg btn-warning w-75 align-self-center">Challange</a>
+                </p>
+              </div>
+            </div>
+            <div class="col ">
+              <div class="sect-2-box float-start text-center rounded-4">
+                <div class="card rounded-4">
+                <div class="card-body">
+                  <img src="assets/img/sect-2-img-2.png" alt=""/>
+                </div>
+              </div>
+              <p class="mt-5">
+                <a href="#" class="btn btn-lg btn-warning w-75">Challange</a>
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- CONSULTATION
+    ========================================================== -->
+    <section id="konsultasi">
+      <div class="container-fluid konsultasi pt-5 pb-5">
+        <div class="container text-center">
+          <h1>4 langkah Mudah <br> Melakukan Konsultasi</h1>
+        </div>
+
+        <div class="container">
+          <div class="row pt-5 mx-auto justify-content-center">
+              <div class="col-md-3 text-center">
+                  <h1>1</h1>
+                  <img src="assets/img/sect-3-img-1.png" alt="" srcset="" class="w-100 h-50">
+                  <h6 class="mt-4 mb-5">Pilih Paket</h6>
+                  <p>Pilih paket yang Anda <br> inginkan </p>
+              </div>
+              <div class="col-md-3  text-center">
+                  <h1>2</h1>
+                  <img src="assets/img/sect-3-img-2.png" alt="" srcset="" class="w-100 h-50">
+                  <h6 class="mt-4 mb-5">Pilih Psikolog</h6>
+                  <p>Pilih psikolog sesuai <br>dengan masalah yang <br> Anda hadapi </p>
+              </div>
+              <div class="col-md-3  text-center">
+                  <h1>3</h1>
+                  <img src="assets/img/sect-3-img-3.png" alt="" srcset="" class="w-100 h-50">
+                  <h6 class="mt-4 mb-5">Isi Identitas & <br> Mengatur Jadwal</h6>
+                  <p>Isilah Identitas dan <br> atur jadwal konsultasi</p>
+              </div>
+              <div class="col-md-3  text-center">
+                  <h1>4</h1>
+                  <img src="assets/img/sect-3-img-4.png" alt="" srcset="" class="w-100 h-50">
+                  <h6 class="mt-4 mb-5">Pembayaran</h6>
+                  <p>Lakukan Pembayaran <br> untuk bisa mengikuti <br> konseling </p>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+
+    <!-- PROFILE Psikolog
+    ======================================================= -->
     <section id="profil">
-      <main>
-        <h4 class="text-center">Profile Psikolog</h4>
-        <div class="wrapper">
+      <h1 class="text-center pb-5 mb-5 mt-5">Profile Psikolog</h1>
+      <div class="wrapper ">
           <ul class="items">
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-            <li class="item"><img src="assets/pic3.png" alt=""></li>
-          
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
+            <li class="item"><img src="assets/img/sect-4.png" alt=""></li>
           </ul>
         </div>
-      </main>
     </section>
-    <!-- Layanan -->
+    
+
+    <!-- SERVICE
+    ============================================================ -->
     <section id="layanan">
-      <div
-      class="container p-5 mb-4"
-      style="width: 85%; height: 20%; background-color: rgb(84,94,215,0.8);">
-      <div
-      class="container  rounded-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h4 class="text-light mx-auto mb-5 w-50">Pilih layanan konsultasi yang membuatmu <br>
-               nyaman dan tenang</h4>
-          </div>
+      <div class="p-5 mb-5" style=" background-color: #5260DB; margin-top: 10%;"> 
+        <div class="rounded-3">
+            <h1 class="text-center text-light mb-5 display-5 fw-bold">Pilih layanan konsultasi yang membuatmu
+            <br>nyaman dan tenang</h1>
+          <div class="row">
           <div class="col">
-            <div
-              class="card float-end me-2" >
-              <div class="card-body text-center">
-                <img
-                  src="assets/live2.jpg"
-                  alt=""
-                  width="100%"
-                  height="220px"
-                  style="border-radius: 4%"
-                 
-                />
-                <p class="mt-3">
-                  <a href="#" class="btn btn-warning">Mentoring</a>
+          <div class="card float-end rounded-4" style="height: 400px; width: 300px;">
+            <div class="card-body text-center">
+                <img src="assets/img/sect-5-img-1.png" class="mt-5" alt="" width="250px" height="200px"/>
+                <p class="mt-5">
+                  <a href="#" class="btn btn-lg btn-warning rounded-5 w-75">Mentoring</a>
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div
-              class="card float-start">
-              <div class="card-body text-center">
-                <img
-                  src="assets/challange.jpg"
-                  alt=""
-                  width="300px%"
-                  height="220px"
-                  style="border-radius: 4%"
-                  
-                />
-                <p class="mt-3">
-                  <a href="#" class="btn btn-warning">Konseling</a>
+            <div class="card float-start rounded-4">
+              <div class="card-body text-center" style="height: 400px; width: 300px;">
+                <img src="assets/img/sect-5-img-2.png" class="mt-5" alt="" width="250px" height="200px"/>
+                <p class="mt-5">
+                  <a href="#" class="btn btn-lg btn-warning rounded-5 w-75">Konseling</a>
                 </p>
               </div>
             </div>
           </div>
-          </div>
-        </div>
       </div>
     </div>
        
     </section>
 
+    
+    <!-- TESTIMONIES
+    ============================================================= -->
     <section id="testimoni">
-      <div class="wrapper">
+      <div class="wrapper pt-5">
+        <h1 class="mb-3 text-center fw-bold">Testimoni mereka yang telah <br>menggunakan afeksi</h1>
         <ul class="items">
-          <li class="item2">
+          <li class="item2 item-shadow p-3">
+            <img src="assets/img/sect-6-img.png" class="camera">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo, praesentium.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, beatae! Incidunt dolorem sequi deserunt qui minima blanditiis deleniti nesciunt impedit.
             </p>
           </li>
-          <li class="item2">
+          <li class="item2 item-shadow p-3">
+            <img src="assets/img/sect-6-img.png" class="camera">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              ab.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti nam autem incidunt voluptate quo consequatur?
             </p>
           </li>
-          <li class="item2">
+          <li class="item2 item-shadow p-3">
+            <img src="assets/img/sect-6-img.png" class="camera">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt non quas, iste, provident incidunt adipisci expedita doloribus distinctio maxime consequatur magni ab quaerat fugiat?
             </p>
           </li>
-          <li class="item2">
+          <li class="item2 item-shadow p-3">
+            <img src="assets/img/sect-6-img.png" class="camera">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam tempore, aspernatur quae deleniti totam commodi id animi odio sit!
             </p>
           </li>
-          <li class="item2">
+          <li class="item2 item-shadow p-3">
+            <img src="assets/img/sect-6-img.png" class="camera">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet obcaecati voluptates adipisci aperiam odit eum?
             </p>
           </li>
-          <li class="item2">
+          <li class="item2 item-shadow p-3">
+            <img src="assets/img/sect-6-img.png" class="camera">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              ab.
-            </p>
-          </li>
-          <li class="item2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-              ab.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae animi commodi corporis facilis quibusdam sequi aspernatur dolorem perspiciatis, sunt molestias labore molestiae amet assumenda enim?
             </p>
           </li>
         </ul>
-        </div>
-
+      </div>
     </section>
 
+
+    <!-- PARTNERSHIP
+    ================================================== -->
     <section id="client">
-      <div class="card m-auto mb-5 text-center" style="max-width: 90%;">
+      <div class="card m-auto mb-5 mt-5 text-center">
         <div class="card-body" style="background: rgb(225,227,248) ;">
-            <h1 class="card-title fw-bold">Telah Bekerja Sama Dengan :</h1>
-            <div class="container">
-              <div class="row">
-                  <div class="col-md-3">
-                      <img src="assets/Desain tanpa judul.png" alt="Gambar 1" class="img-fluid">
+            <h1 class="card-title fw-bold mb-5">Telah Bekerja Sama Dengan :</h1>
+              <div class="row pt-5">
+                  <div class="col-md-3 m-auto">
+                      <img src="assets/img/sect-7-img-1.png" alt="Gambar 1" class="img-fluid w-75">
                   </div>
-                  <div class="col-md-3">
-                      <img src="assets/Desain tanpa judul (1).png" alt="Gambar 2" class="img-fluid">
+                  <div class="col-md-3 m-auto">
+                      <img src="assets/img/sect-7-img-2.png" alt="Gambar 2" class="img-fluid w-75">
                   </div>
-                  <div class="col-md-3">
-                      <img src="assets/Desain tanpa judul (2).png" alt="Gambar 3" class="img-fluid">
+                  <div class="col-md-3 m-auto">
+                      <img src="assets/img/sect-7-img-3.png" alt="Gambar 3" class="img-fluid w-75">
                   </div>
-                  <div class="col-md-3">
-                      <img src="assets/Desain tanpa judul (3).png" alt="Gambar 4" class="img-fluid">
+                  <div class="col-md-3 m-auto">
+                      <img src="assets/img/sect-7-img-4.png" alt="Gambar 4" class="img-fluid w-75">
                   </div>
               </div>
-          </div>
-          
         </div>
     </div>
     </section>
+
+
+    <!-- FOOTER
+    ================================================== -->
     <section id="footer">
-      <div class="card m-auto mb-5 text-center border-0" style="max-width: 90%;">
-        <div class="card-body bg-white kotak">
+      <div class="card mx-auto border-0">
+        <div class="card-body bg-body kotak rounded-3 p-5">
             <div class="container">
               <div class="row">
-               <h4 class="card-title fw-bold text-start">Join sekarang untuk <br> mencoba AFEKSI</h4>
+                <div class="col">
+                  <h4 class="card-title fw-bold text-start">Join sekarang untuk <br> mencoba AFEKSI</h4>
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-warning btn-lg rounded-5 shadow-sm float-end"><bold>Mulai Konsultasi</bold></button>
+                </div>
               </div>
-              <button type="button" class="btn btn-warning float-end">Mulai Konsultasi</button>
-          </div>
-          </div>
-          <footer class="bg-primary text-white pt-5 pb-4 kotak-biru">
-            <div class="container">
-                <div class="row mx-auto">
-                    <div class="col bg-white text-dark" style="width: 1000px;">
-                     <img src="assets/logo.png" alt="" width="30%" class="float-start">
-                     <p> Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia <br>
-                         Contact: +6282142625552 <br>
-                         Email: afeksidn@gmail.com</p>
-                         <br>
-                    <p class="fw-bold">Afeksi merupakan Platform layanan edukasi dan <br> konsultasi kesehatan hubungan berbasis psikologi <br> relasi pertama di Indonesia</p>
-                   <a href=""> <img src="assets/twitter.png" alt="" width="30px"></a>
-                   <a href=""> <img src="assets/youtube.png" alt="" width="30px"></a>
-                   <a href=""><img src="assets/tik-tok.png" alt="" width="30px"></a>
-                   <a href=""><img src="assets/linkedin.png" alt="" width="30px"></a>
+            </div>
+        </div>
+          <footer class="bg-footer text-white pt-5 pb-4">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-5 bg-white text-dark p-2 rounded-3" >
+                      <div class="row">
+                        <div class="col-4">
+                          <img src="assets/logo.png" alt="" width="100%">
+                        </div>
+                        <div class="col my-4">
+                          <p> Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia
+                              Contact: +6282142625552
+                              Email: afeksidn@gmail.com</p>
+                        </div>
+                        <div class="col-12 mx-4 mb-4">
+                          <p class="fw-bold">Afeksi merupakan Platform layanan edukasi dan <br> konsultasi kesehatan hubungan berbasis psikologi <br> relasi pertama di Indonesia</p>
+                            <a href=""> <img src="assets/twitter.png" alt="" width="30px"></a>
+                            <a href=""> <img src="assets/youtube.png" alt="" width="30px"></a>
+                            <a href=""><img src="assets/tik-tok.png" alt="" width="30px"></a>
+                            <a href=""><img src="assets/linkedin.png" alt="" width="30px"></a>
+                        </div>
+                      </div>
 
                     </div>
-                    <div class="col">
-                        <h6 class="mb-4 font-weight-bold text-white">
+                    <div class="col ms-3">
+                        <div class="ms-5">
+                          <h6 class="mb-4 font-weight-bold text-white">
                             Layanan
                         </h6>
                         <p>
-                            <a href="#" class="text-white">Konseling</a>
+                            <a href="#" class="text-white text-decoration-none">Konseling</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white">Mentoring</a>
+                            <a href="#" class="text-white text-decoration-none">Mentoring</a>
                         </p>
+                        </div>
                         
                     </div>
                     <div class="col">
-                        <h6 class="mb-4 font-weight-bold text-white">Tentang Kami</h6>
+                        <div class="ms-5"> 
+                          <h6 class="mb-4 font-weight-bold text-white">Tentang Kami</h6>
                         <p>
-                            <a href="#" class="text-white">Tentang kami</a>
+                            <a href="#" class="text-white text-decoration-none">Tentang kami</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white">Webinar</a>
+                            <a href="#" class="text-white text-decoration-none">Webinar</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white">Campaign</a>
+                            <a href="#" class="text-white text-decoration-none">Campaign</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white">Karir</a>
+                            <a href="#" class="text-white text-decoration-none">Karir</a>
                         </p>
                         <p>
-                          <a href="#" class="text-white">Rekap History</a>
+                          <a href="#" class="text-white text-decoration-none">Rekap History</a>
                       </p>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h6 class="mb-4 font-weight-bold text-white">Yang lainnya</h6>
+                    <div class="col me-5">
+                        <div class="float-end">
+                          <h6 class="mb-4 font-weight-bold text-white">Yang lainnya</h6>
                         <p>
-                          <a href="#" class="text-white">Kebijakan Privasi</a>
+                          <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
                         </p>
                         <p>
-                          <a href="#" class="text-white">FAQ</a>
+                          <a href="#" class="text-white text-decoration-none">FAQ</a>
                         </p>
+                        </div>
                     </div>
                 </div>
-        </footer>
+          </footer>
         </div>
     </div>
     </section>
