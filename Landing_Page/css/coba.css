@@ -18,6 +18,7 @@
 .bg-hero {
   background: linear-gradient(180deg, rgba(24,43,207,0.79) 0%, rgba(83,88,203,0.76) 50%, rgba(13,23,247,0.79) 100%);
   overflow: hidden;
+  position: relative;
 }
 
 .banner {
@@ -27,8 +28,9 @@
 
 .banner-headline {
   position: absolute;
-  bottom: -50px;
+  top: 38%;
   left: 30px;
+  letter-spacing: 0.1rem;
 }
 
 .banner-headline button {

@@ -21,12 +21,16 @@
     ============================================================================ -->
     <section>
       <div class="mx-5">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <header class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ">
+          <a href="#" class="col-md-3 mb-2 mb-md-0">
             <img src="assets/logo.png" alt="" class="nav-logo">
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5 fw-semibold">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5 fw-semibold mx-auto">
             <li><a href="#beranda" class="nav-link px-2 link-dark">Beranda</a></li>
             <li><a href="#layanan" class="nav-link px-2 link-secondary">Layanan</a></li>
             <li><a href="#kegiatan" class="nav-link px-2 link-secondary">Kegiatan</a></li>
@@ -34,10 +38,11 @@
             <li><a href="#faq" class="nav-link px-2 link-secondary">FAQ</a></li>
             <li><a href="#karir" class="nav-link px-2 link-secondary">Karir</a></li>
           </ul>
-    
-          <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-lg btn-warning w-50">Login</button>
+            <div class="col-md-3 ms-auto">
+              <button type="button" class="btn btn-lg btn-warning w-75 float-end">Login</button>
           </div>
+          </div>
+    
         </header>
       </div>
     </section>
@@ -55,7 +60,7 @@
               menciptakan hubungan <br />
               yang sehat di seluruh dunia
             </h1>
-            <p class="fs-5 text-light">
+            <p class="fs-3 text-light">
               Bercerita dan Berbagi rasa. Tenangkan <br />
               hati dan tenangkan diri
             </p>
@@ -74,8 +79,8 @@
     <!-- ACTIVITY
     ================================================================ -->
     <section id="kegiatan">
-      <div class="container p-5 mb-5 rounded-3">
-      <div class="container-fluid">
+      <div class="container p-5 mb-5">
+      <div class="container-fluid mb-5 pb-2">
           <h1 class="text-dark text-center mx-auto mb-5 mt-5 w-50">Ikuti kegiatan yang sedang <br> berlangsung</h1>
           <div class="row">
             <div class="col ">
@@ -121,25 +126,25 @@
               <div class="col-md-3 text-center">
                   <h1>1</h1>
                   <img src="assets/img/sect-3-img-1.png" alt="" srcset="" class="w-100 h-50">
-                  <h6 class="mt-4 mb-5">Pilih Paket</h6>
+                  <h5 class="mt-4 mb-5">Pilih Paket</h5>
                   <p>Pilih paket yang Anda <br> inginkan </p>
               </div>
               <div class="col-md-3  text-center">
                   <h1>2</h1>
                   <img src="assets/img/sect-3-img-2.png" alt="" srcset="" class="w-100 h-50">
-                  <h6 class="mt-4 mb-5">Pilih Psikolog</h6>
+                  <h5 class="mt-4 mb-5">Pilih Psikolog</h5>
                   <p>Pilih psikolog sesuai <br>dengan masalah yang <br> Anda hadapi </p>
               </div>
               <div class="col-md-3  text-center">
                   <h1>3</h1>
                   <img src="assets/img/sect-3-img-3.png" alt="" srcset="" class="w-100 h-50">
-                  <h6 class="mt-4 mb-5">Isi Identitas & <br> Mengatur Jadwal</h6>
+                  <h5 class="mt-4 mb-5">Isi Identitas & <br> Mengatur Jadwal</h6>
                   <p>Isilah Identitas dan <br> atur jadwal konsultasi</p>
               </div>
               <div class="col-md-3  text-center">
                   <h1>4</h1>
                   <img src="assets/img/sect-3-img-4.png" alt="" srcset="" class="w-100 h-50">
-                  <h6 class="mt-4 mb-5">Pembayaran</h6>
+                  <h5 class="mt-4 mb-5">Pembayaran</h5>
                   <p>Lakukan Pembayaran <br> untuk bisa mengikuti <br> konseling </p>
               </div>
           </div>
@@ -285,7 +290,7 @@
                   <h4 class="card-title fw-bold text-start">Join sekarang untuk <br> mencoba AFEKSI</h4>
                 </div>
                 <div class="col">
-                  <button type="button" class="btn btn-warning btn-lg rounded-5 shadow-sm float-end"><bold>Mulai Konsultasi</bold></button>
+                  <button type="button" class="btn btn-warning btn-lg rounded-5 shadow float-end fw-semibold"><bold>Mulai Konsultasi</bold></button>
                 </div>
               </div>
             </div>
@@ -300,11 +305,12 @@
                         </div>
                         <div class="col my-4">
                           <p> Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia
-                              Contact: +6282142625552
-                              Email: afeksidn@gmail.com</p>
+                             <br> Contact: +6282142625552</p>
+                              <p>Email: afeksidn@gmail.com</p>
                         </div>
                         <div class="col-12 mx-4 mb-4">
                           <p class="fw-bold">Afeksi merupakan Platform layanan edukasi dan <br> konsultasi kesehatan hubungan berbasis psikologi <br> relasi pertama di Indonesia</p>
+                            <a href=""> <img src="assets/instagram.png" alt="" width="30px"></a>
                             <a href=""> <img src="assets/twitter.png" alt="" width="30px"></a>
                             <a href=""> <img src="assets/youtube.png" alt="" width="30px"></a>
                             <a href=""><img src="assets/tik-tok.png" alt="" width="30px"></a>
