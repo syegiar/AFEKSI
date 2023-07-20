@@ -8,147 +8,104 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
+
+   <!-- NAVBAR
+    ============================================================================ -->
     <section>
-      <div class="container text-center">
-        <header
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ms-3"
-        >
-          <a href="#"><img src="assets/logo.png" alt="" width="100" /></a>
-
-          <ul class="nav col-12 col-md-auto mb-md-0 mx-auto">
-            <li>
-              <a href="#" class="nav-link link-dark me-3 px-k fw-bold"
-                >Beranda</a
-              >
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-dark me-3">Layanan</a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-dark me-3">Kegiatan</a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-2 link-dark me-3">Tentang Kami</a>
-            </li>
-            <li><a href="#" class="nav-link px-2 link-dark me-3">FAQ</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark me-3">Career</a></li>
+      <div class="mx-5">
+        <header class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center justify-content-md-between ">
+          <a href="#" class="col-md-3 mb-2 mb-md-0">
+            <img src="assets/logo.png" alt="" class="nav-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5 fw-semibold mx-auto">
+            <li><a href="#beranda" class="nav-link px-2 link-secondary">Beranda</a></li>
+            <li><a href="#layanan" class="nav-link px-2 link-secondary">Layanan</a></li>
+            <li><a href="#kegiatan" class="nav-link px-2 link-secondary">Kegiatan</a></li>
+            <li><a href="#tentang" class="nav-link px-2 link-secondary">Tentang Kami</a></li>
+            <li><a href="#faq" class="nav-link px-2 link-secondary">FAQ</a></li>
+            <li><a href="#karir" class="nav-link px-2 link-secondary">Karir</a></li>
           </ul>
-
-          <div class="text-end">
-            <button
-              type="button"
-              class="btn btn-warning me-2 fw-bold"
-              style="width: 100px"
-            >
-              Login
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-warning me-2 fw-bold"
-              style="width: 100px"
-            >
-              Sign Up
-            </button>
+            <div class="col-md-3 ms-auto">
+              <!-- <button type="button" class="btn btn-lg btn-warning w-75 float-end">Login</button> -->
           </div>
+          </div>
+    
         </header>
       </div>
     </section>
-    <!-- End Navbar -->
-    <section>
-      <div class="container mb-5">
-        <div class="timeline d-flex justify-content-center">
-          <div class="timeline-item active">
+
+
+    <section class="timeline-bg">
+          <!-- TIMELIME 
+    ============================================================================== -->
+      <div class="container mb-5 pb-5">
+        <div class="timeline timeline-line mx-auto d-flex justify-content-between">
+          <div class="timeline-item">
             <div class="d-flex flex-column">
-              <div class="timeline-circle circle-1 align-self-center">1</div>
+              <div class="timeline-circle circle-item align-self-center">1</div>
               <div class="timeline-text">Pilih Paket</div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="d-flex flex-column">
-              <div class="timeline-circle circle-2 align-self-center">2</div>
+              <div class="timeline-circle circle-item align-self-center">2</div>
               <div class="timeline-text">Pilih Psikolog</div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="d-flex flex-column">
-              <div class="timeline-circle circle-3 align-self-center">3</div>
+              <div class="timeline-circle circle-item align-self-center">3</div>
+              <div class="timeline-text">Data Diri</div>
+            </div>
+          </div>
+          <div class="timeline-item active">
+            <div class="d-flex flex-column">
+              <div class="timeline-circle circle-item align-self-center">4</div>
               <div class="timeline-text">Pembayaran</div>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="d-flex flex-column">
-              <div class="timeline-circle circle-4 align-self-center">4</div>
-              <div class="timeline-text">Detail Transaksi</div>
-            </div>
-          </div>
+        </div>
+      </div>
+
+    <!-- TIMELINE CONTENT
+    ==================================================================================== -->
+      <div class="contanier px-5 mx-auto w-75 pt-5">
+        <div class="mx-5 px-5 text-center d-flex border border-3" style="height:500px;"> 
+          <h1 class="mx-auto align-self-center">Terimakasih Telah Mendaftar Konsultasi
+            Kami akan reminder H-1 dari jadwal yang             
+            sudah dipilih
+            </h1>
         </div>
       </div>
     </section>
 
-    <!-- Content -->
-    <div class="contanier p-5 m-5">
-      <div class="row mx-5 pb-5 justify-content-center g-5 border border-3">
-        <div class="col-4">
-          <div class="card">
-            <img src="assets/pic.png" alt="" style="height: 400px" />
-            <div class="card-body align-self-center">
-              <a href="psikolog.html" class="btn btn-warning">Pilih Paket</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="assets/pic.png" alt="" style="height: 400px" />
-            <div class="card-body align-self-center">
-              <a href="#" class="btn btn-warning">Pilih Paket</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="assets/pic.png" alt="" style="height: 400px" />
-            <div class="card-body align-self-center">
-              <a href="#" class="btn btn-warning">Pilih Paket</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="assets/pic.png" alt="" style="height: 400px" />
-            <div class="card-body align-self-center">
-              <a href="#" class="btn btn-warning">Pilih Paket</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="assets/pic.png" alt="" style="height: 400px" />
-            <div class="card-body align-self-center">
-              <a href="#" class="btn btn-warning">Pilih Paket</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-
-     <!-- Footer -->
-     <section id="footer">
-      <div class="card m-auto border-0" style="max-width: 100%;">
-        <div class="card-body bg-white kotak">
-            <div class="mt-5">
+     <!-- FOOTER
+    =============================================================================== -->
+    <section id="footer">
+      <!-- <div class="card mx-auto border-0">
+        <div class="card-body bg-body kotak rounded-3 p-5">
+            <div class="container">
               <div class="row">
-               <h4 class="card-title fw-bold text-start">Join sekarang untuk <br> mencoba AFEKSI</h4>
+                <div class="col">
+                  <h4 class="card-title fw-bold text-start">Join sekarang untuk <br> mencoba AFEKSI</h4>
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-warning btn-lg rounded-5 shadow float-end fw-semibold"><bold>Mulai Konsultasi</bold></button>
+                </div>
               </div>
-              <button type="button" class="btn btn-warning float-end">Mulai Konsultasi</button>
-          </div>
-          </div>
-          <footer class="text-white pt-5 pb-4 kotak-biru" style="background-color: #2A4CFC;">
-            <div class="container mt-5">
+            </div>
+        </div> -->
+          <footer class="bg-footer text-white pt-5 pb-4">
+            <div class="container mt-3">
                 <div class="row">
                     <div class="col-5 bg-white text-dark p-2 rounded-3" >
                       <div class="row">
@@ -157,82 +114,71 @@
                         </div>
                         <div class="col my-4">
                           <p> Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia
-                              Contact: +6282142625552
-                              Email: afeksidn@gmail.com</p>
+                             <br> Contact: +6282142625552</p>
+                              <p>Email: afeksidn@gmail.com</p>
                         </div>
                         <div class="col-12 mx-4 mb-4">
                           <p class="fw-bold">Afeksi merupakan Platform layanan edukasi dan <br> konsultasi kesehatan hubungan berbasis psikologi <br> relasi pertama di Indonesia</p>
+                            <a href=""> <img src="assets/instagram.png" alt="" width="30px"></a>
                             <a href=""> <img src="assets/twitter.png" alt="" width="30px"></a>
                             <a href=""> <img src="assets/youtube.png" alt="" width="30px"></a>
                             <a href=""><img src="assets/tik-tok.png" alt="" width="30px"></a>
                             <a href=""><img src="assets/linkedin.png" alt="" width="30px"></a>
                         </div>
                       </div>
-  
+
                     </div>
-                    <div class="col">
+                    <div class="col ms-3">
                         <div class="ms-5">
                           <h6 class="mb-4 font-weight-bold text-white">
-                            Product
+                            Layanan
                         </h6>
                         <p>
-                            <a href="#" class="text-white text-decoration-none">Download</a>
+                            <a href="#" class="text-white text-decoration-none">Konseling</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white text-decoration-none">Pricing</a>
+                            <a href="#" class="text-white text-decoration-none">Mentoring</a>
                         </p>
-                        <p>
-                          <a href="#" class="text-white text-decoration-none">Locations</a>
-                      </p>
-                      <p>
-                        <a href="#" class="text-white text-decoration-none">Server</a>
-                    </p>
-                    <p>
-                      <a href="#" class="text-white text-decoration-none">Countries</a>
-                  </p>
-                  <p>
-                    <a href="#" class="text-white text-decoration-none">Blog</a>
-                </p>
                         </div>
                         
                     </div>
                     <div class="col">
-                        <div class="ms-2"> 
-                          <h6 class="mb-4 font-weight-bold text-white">Engage</h6>
+                        <div class="ms-5"> 
+                          <h6 class="mb-4 font-weight-bold text-white">Tentang Kami</h6>
                         <p>
-                            <a href="#" class="text-white text-decoration-none">FA</a>
+                            <a href="#" class="text-white text-decoration-none">Tentang kami</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white text-decoration-none">Tutorials</a>
+                            <a href="#" class="text-white text-decoration-none">Webinar</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white text-decoration-none">About Us</a>
+                            <a href="#" class="text-white text-decoration-none">Campaign</a>
                         </p>
                         <p>
-                            <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+                            <a href="#" class="text-white text-decoration-none">Karir</a>
                         </p>
                         <p>
-                          <a href="#" class="text-white text-decoration-none">Term of Service</a>
+                          <a href="#" class="text-white text-decoration-none">Rekap History</a>
                       </p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div>
-                          <h6 class="mb-4 font-weight-bold text-white">Earn Money</h6>
+                    <div class="col me-5">
+                        <div class="float-end">
+                          <h6 class="mb-4 font-weight-bold text-white">Yang lainnya</h6>
                         <p>
-                          <a href="#" class="text-white text-decoration-none">Affiliate</a>
+                          <a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a>
                         </p>
                         <p>
-                          <a href="#" class="text-white text-decoration-none">Become Partner</a>
+                          <a href="#" class="text-white text-decoration-none">FAQ</a>
                         </p>
                         </div>
                     </div>
                 </div>
-        </footer>
+          </footer>
         </div>
     </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
