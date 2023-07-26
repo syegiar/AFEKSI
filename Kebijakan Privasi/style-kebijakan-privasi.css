@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.nav-logo {
+  width: 40%;
+  margin: -15px;
+}
+
+.custom-button {
+  font-weight: 600;
+  width: 200px;
+}
+
+/* HERO */
+.faq-hero {
+  background-color: #5260db;
+  color: white;
+}
+
+/* Privacy SECTION */
+.container .nav .nav-item .nav-link {
+  color: black;
+}
+
+.container .nav .nav-item .active {
+  background-color: #fbdd41;
+}
+
+.accordion .accordion-item {
+  margin: 0.2% 0;
+  background-color: #d9d9d9;
+  border-bottom: 2px solid black;
+}
+.accordion-button-custom[aria-expanded="true"] {
+  background-color: #6f6b6b;
+  color: white;
+}
+
+.accordion .accordion-item .accordion-body {
+  background-color: white;
+  padding-bottom: 2%;
+  font-size: 20px;
+  width: 100%;
+}
+.accordion .accordion-item .accordion-body .garis {
+  border-left: 5px solid #6f6b6b;
+  margin-right: 15px;
+  margin-left: -20px;
+}
+.accordion-button-custom {
+  border: 0;
+  background-color: transparent;
+  padding: 1%;
+  width: 100%;
+  text-align: start;
+  position: relative;
+  display: flex;
+}
+
+.accordion-button-custom h1 {
+  font-weight: normal;
+  font-size: 20px;
+  width: 80%;
+}
+
+.arrow[aria-expanded="true"]::after {
+  font-family: "Bootstrap-icons";
+  content: "\F2EA";
+  position: absolute;
+  right: 100px;
+}
+
+.arrow[aria-expanded="false"]::after {
+  font-family: "Bootstrap-icons";
+  content: "\F64D";
+  position: absolute;
+  right: 100px;
+}
+
+/* footer */
+.kotak {
+  position: relative;
+  top: 40px;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.bg-footer {
+  background: rgb(24, 43, 207);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 43, 207, 0.79) 0%,
+    rgba(42, 72, 252, 0.76) 50%,
+    rgba(42, 72, 252, 0.79) 100%
+  );
+}
