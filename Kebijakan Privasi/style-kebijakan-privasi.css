@@ -1,68 +1,98 @@
+:root {
+  --bg-afeksi-theme: #5A74FD;
+  --color-afeksi-custom: #374DFA;
+  --bg-final-footer: #4959DB;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+.color-custom {
+  color: var(--color-afeksi-custom);
+}
+
 /* Navbar */
 .nav-logo {
-  width: 40%;
+  width: 120%;
   margin: -15px;
 }
 
-.custom-button {
-  font-weight: 600;
-  width: 200px;
-}
-
 /* HERO */
-.faq-hero {
-  background-color: #5260db;
+.hero {
+  background-color: var(--bg-afeksi-theme);
   color: white;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Privacy SECTION */
+/* ============ HERO LAYERS ================= */
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 400%;
+  top: -120%;
+  left: 70%;
+  background: url(./assets/layer.png) repeat-y;
+  background-size: 30%;
+  transform: rotate(15deg);
+  opacity: 0.1;
+}
+.hero::before {
+  content: "";
+ position: absolute;
+ width: 200%;
+ height: 300%;
+ top: -120%;
+ left: -20%;
+ background: url(./assets/layer.png) repeat-y;
+ background-size: 25%;
+ transform: rotate(-15deg);
+ opacity: 0.1;
+}
+
+/* PRIVACY SECTION */
 .container .nav .nav-item .nav-link {
   color: black;
 }
 
-.container .nav .nav-item .active {
-  background-color: #fbdd41;
+.accordion .accordion-item-custom {
+  margin: 2% 0;
+  border: 2px solid lightgrey; 
 }
 
-.accordion .accordion-item {
-  margin: 0.2% 0;
-  background-color: #d9d9d9;
-  border-bottom: 2px solid black;
-}
-.accordion-button-custom[aria-expanded="true"] {
-  background-color: #6f6b6b;
-  color: white;
-}
+.accordion .accordion-item-custom:hover {
+  border: 2px solid var(--bg-afeksi-theme); 
+} 
 
-.accordion .accordion-item .accordion-body {
-  background-color: white;
+.accordion .accordion-item-custom .accordion-body {
+  margin-top: -20px;
   padding-bottom: 2%;
   font-size: 20px;
-  width: 100%;
+  width: 93%;
+  margin-left: 30px;
 }
-.accordion .accordion-item .accordion-body .garis {
-  border-left: 5px solid #6f6b6b;
-  margin-right: 15px;
-  margin-left: -20px;
-}
+
 .accordion-button-custom {
   border: 0;
   background-color: transparent;
-  padding: 1%;
+  padding: 2% 1.7%;
   width: 100%;
   text-align: start;
   position: relative;
   display: flex;
+  margin-left: 30px;
+}
+
+.accordion-button-custom:hover {
+  color: var(--bg-afeksi-theme);
 }
 
 .accordion-button-custom h1 {
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 26.787px;
   width: 80%;
 }
 
@@ -70,31 +100,86 @@
   font-family: "Bootstrap-icons";
   content: "\F2EA";
   position: absolute;
-  right: 100px;
+  right: 80px;
+  font-weight: bold;
 }
 
 .arrow[aria-expanded="false"]::after {
   font-family: "Bootstrap-icons";
   content: "\F64D";
   position: absolute;
-  right: 100px;
+  right: 80px;
+  font-weight: bold;
 }
 
 /* footer */
-.kotak {
-  position: relative;
-  top: 40px;
-  width: 80%;
-  height: 100%;
-  margin: auto;
+
+.bg-footer-1 {
+  background: var(--bg-afeksi-theme);
+}
+.bg-footer-2 {
+  background: var(--bg-final-footer);
 }
 
-.bg-footer {
-  background: rgb(24, 43, 207);
-  background: linear-gradient(
-    180deg,
-    rgba(24, 43, 207, 0.79) 0%,
-    rgba(42, 72, 252, 0.76) 50%,
-    rgba(42, 72, 252, 0.79) 100%
-  );
+.mx-n1 {
+  margin-left: -2.3rem !important;
 }
+.justify-text {
+  text-align: justify;
+}
+
+/* ======= Fotter Layers ============ */
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+ content: "";
+ position: absolute;
+ width: 220%;
+ height: 200%;
+ top: -300%;
+ left: 2%;
+ z-index: 0;
+ background: url(./assets/layer.png) no-repeat;
+ background-position: bottom right;
+ background-size: 35%;
+ transform: rotate(95deg);
+ opacity: 0.1;
+}
+
+.footer-layer{
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-layer::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 5%;
+  left: -108%;
+  z-index: 0;
+  background: url(./assets/layer-cl.png) no-repeat;
+  background-position: bottom right;
+  background-size: 20%;
+  transform: rotate(320deg);
+  opacity: 0.1;
+}
+/* ============================================================ */
+
+
+
+/* HERO VERSION 2 */
+.hero-2 {
+  background-color: var(--bg-afeksi-theme);
+  background-image: url(./assets/hero-layer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
+  color: white;
+}
+
