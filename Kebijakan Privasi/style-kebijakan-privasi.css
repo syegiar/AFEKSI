@@ -13,173 +13,558 @@
   color: var(--color-afeksi-custom);
 }
 
-/* Navbar */
-.nav-logo {
-  width: 120%;
-  margin: -15px;
-}
+ /* FOR DESKTOP ========================================================================================== */
+@media only screen and (min-width: 991px) {
+  /* Navbar */
+  .nav-logo {
+    width: 8vw;
+    margin: -20px -10px;
+  }
+  .navbar li {
+    font-size: 1.25vw;
+  }
+  .nav-container {
+    margin: 0 5%;
+  }
 
-/* HERO */
-.hero {
-  background-color: var(--bg-afeksi-theme);
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
 
-/* ============ HERO LAYERS ================= */
-.hero::after {
+  /* HERO */
+  .hero {
+    background-color: var(--bg-afeksi-theme);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  /* ============ HERO LAYERS ================= */
+  .hero::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 400%;
+    top: -120%;
+    left: 70%;
+    background: url(./assets/layer.png) repeat-y;
+    background-size: 30%;
+    transform: rotate(15deg);
+    opacity: 0.1;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 300%;
+    top: -120%;
+    left: -20%;
+    background: url(./assets/layer.png) repeat-y;
+    background-size: 25%;
+    transform: rotate(-15deg);
+    opacity: 0.1;
+  }
+
+  /* PRIVACY SECTION */
+  .container .nav .nav-item .nav-link {
+    color: black;
+  }
+
+  .accordion .accordion-item-custom {
+    margin: 2% 0;
+    border: 2px solid lightgrey; 
+  }
+
+  .accordion .accordion-item-custom:hover {
+    border: 2px solid var(--bg-afeksi-theme); 
+  } 
+
+  .accordion .accordion-item-custom .accordion-body {
+    margin-top: -20px;
+    padding-bottom: 2%;
+    font-size: 20px;
+    width: 93%;
+    margin-left: 30px;
+  }
+
+  .accordion-button-custom {
+    border: 0;
+    background-color: transparent;
+    padding: 2% 1.7%;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .accordion-button-custom:hover {
+    color: var(--bg-afeksi-theme);
+  }
+
+  .accordion-button-custom h2 {
+    font-weight: bold;
+    font-size: 26.787px;
+    width: 80%;
+  }
+
+  .arrow[aria-expanded="true"]::after {
+    font-family: "Bootstrap-icons";
+    content: "\F2EA";
+    position: absolute;
+    right: 80px;
+    font-weight: bold;
+  }
+
+  .arrow[aria-expanded="false"]::after {
+    font-family: "Bootstrap-icons";
+    content: "\F64D";
+    position: absolute;
+    right: 80px;
+    font-weight: bold;
+  }
+
+  /* footer */
+
+  .bg-footer-1 {
+    background: var(--bg-afeksi-theme);
+  }
+  .bg-footer-2 {
+    background: var(--bg-final-footer);
+  }
+
+  .mx-n1 {
+    margin-left: -2.3rem !important;
+  }
+  .justify-text {
+    text-align: justify;
+  }
+
+  /* ======= Fotter Layers ============ */
+  footer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer::before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: -45%;
+    left: 85%;
+    z-index: 0;
+    background: url(./assets/layer.png) no-repeat;
+    background-position: bottom right;
+    background-size: 800px;
+    transform: rotate(95deg);
+    opacity: 0.1;
+  }
+
+  .footer-layer{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-layer::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 25%;
+    left: 55%;
+    z-index: 0;
+    background: url(./assets/layer-cl.png) no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
+    transform: rotate(-40deg);
+    opacity: 0.1;
+  }
+  /* ============================================================ */
+
+
+
+  /* HERO VERSION 2 */
+  .hero-2 {
+    background-color: var(--bg-afeksi-theme);
+    background-image: url(./assets/hero-layer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+  } 
+}
+/* END DESKTOP ==========================================================================================*/
+
+/* FOR TABLETS ==========================================================================================*/
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  /* Navbar */
+  .nav-logo {
+    width: 100px;
+    margin: -20px -10px;
+  }
+  .navbar li {
+    font-size: 16px;
+  }
+  .nav-container {
+    margin: 0 5%;
+  }
+
+  /* HERO */
+  .hero {
+    background-color: var(--bg-afeksi-theme);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  /* ============ HERO LAYERS ================= */
+  .hero::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 400%;
+    top: -120%;
+    left: 70%;
+    background: url(./assets/layer.png) repeat-y;
+    background-size: 30%;
+    transform: rotate(15deg);
+    opacity: 0.1;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 300%;
+    top: -120%;
+    left: -20%;
+    background: url(./assets/layer.png) repeat-y;
+    background-size: 25%;
+    transform: rotate(-15deg);
+    opacity: 0.1;
+  }
+
+  /* PRIVACY SECTION */
+  .accordion .accordion-item-custom {
+    margin: 2% 0;
+    border: 2px solid lightgrey; 
+  }
+
+  .accordion .accordion-item-custom:hover {
+    border: 2px solid var(--bg-afeksi-theme); 
+  } 
+
+  .accordion .accordion-item-custom .accordion-body {
+    margin-top: -20px;
+    padding-bottom: 2%;
+    font-size: 16px;
+    width: 93%;
+    margin-left: 30px;
+  }
+
+  .accordion-button-custom {
+    border: 0;
+    background-color: transparent;
+    padding: 2% 1.7%;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .accordion-button-custom:hover {
+    color: var(--bg-afeksi-theme);
+  }
+
+  .accordion-button-custom h2 {
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .arrow[aria-expanded="true"]::after {
+    font-family: "Bootstrap-icons";
+    content: "\F2EA";
+    position: absolute;
+    right: 80px;
+    font-weight: bold;
+  }
+
+  .arrow[aria-expanded="false"]::after {
+    font-family: "Bootstrap-icons";
+    content: "\F64D";
+    position: absolute;
+    right: 80px;
+    font-weight: bold;
+  }
+
+  /* footer */
+
+  .bg-footer-1 {
+    background: var(--bg-afeksi-theme);
+  }
+  .bg-footer-2 {
+    background: var(--bg-final-footer);
+  }
+
+  .mx-n1 {
+    margin-left: 0 !important;
+  }
+  .justify-text {
+    text-align: justify;
+  }
+  .w-custom {
+    width: 50% !important;
+  }
+
+  /* ======= Fotter Layers ============ */
+  footer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer::before {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 400%;
-  top: -120%;
-  left: 70%;
-  background: url(./assets/layer.png) repeat-y;
-  background-size: 30%;
-  transform: rotate(15deg);
-  opacity: 0.1;
-}
-.hero::before {
-  content: "";
- position: absolute;
- width: 200%;
- height: 300%;
- top: -120%;
- left: -20%;
- background: url(./assets/layer.png) repeat-y;
- background-size: 25%;
- transform: rotate(-15deg);
- opacity: 0.1;
-}
-
-/* PRIVACY SECTION */
-.container .nav .nav-item .nav-link {
-  color: black;
-}
-
-.accordion .accordion-item-custom {
-  margin: 2% 0;
-  border: 2px solid lightgrey; 
-}
-
-.accordion .accordion-item-custom:hover {
-  border: 2px solid var(--bg-afeksi-theme); 
-} 
-
-.accordion .accordion-item-custom .accordion-body {
-  margin-top: -20px;
-  padding-bottom: 2%;
-  font-size: 20px;
-  width: 93%;
-  margin-left: 30px;
-}
-
-.accordion-button-custom {
-  border: 0;
-  background-color: transparent;
-  padding: 2% 1.7%;
-  width: 100%;
-  text-align: start;
-  position: relative;
-  display: flex;
-  margin-left: 30px;
-}
-
-.accordion-button-custom:hover {
-  color: var(--bg-afeksi-theme);
-}
-
-.accordion-button-custom h1 {
-  font-weight: bold;
-  font-size: 26.787px;
-  width: 80%;
-}
-
-.arrow[aria-expanded="true"]::after {
-  font-family: "Bootstrap-icons";
-  content: "\F2EA";
-  position: absolute;
-  right: 80px;
-  font-weight: bold;
-}
-
-.arrow[aria-expanded="false"]::after {
-  font-family: "Bootstrap-icons";
-  content: "\F64D";
-  position: absolute;
-  right: 80px;
-  font-weight: bold;
-}
-
-/* footer */
-
-.bg-footer-1 {
-  background: var(--bg-afeksi-theme);
-}
-.bg-footer-2 {
-  background: var(--bg-final-footer);
-}
-
-.mx-n1 {
-  margin-left: -2.3rem !important;
-}
-.justify-text {
-  text-align: justify;
-}
-
-/* ======= Fotter Layers ============ */
-footer {
-  position: relative;
-  overflow: hidden;
-}
-
-footer::before {
- content: "";
- position: absolute;
- width: 220%;
- height: 200%;
- top: -300%;
- left: 2%;
- z-index: 0;
- background: url(./assets/layer.png) no-repeat;
- background-position: bottom right;
- background-size: 35%;
- transform: rotate(95deg);
- opacity: 0.1;
-}
-
-.footer-layer{
-  position: relative;
-  overflow: hidden;
-}
-
-.footer-layer::before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 5%;
-  left: -108%;
+  width: 800px;
+  height: 800px;
+  top: -50%;
+  left: 85%;
   z-index: 0;
-  background: url(./assets/layer-cl.png) no-repeat;
+  background: url(./assets/layer.png) no-repeat;
   background-position: bottom right;
-  background-size: 20%;
-  transform: rotate(320deg);
+  background-size: 600px;
+  transform: rotate(100deg);
   opacity: 0.1;
+  }
+
+  .footer-layer{
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-layer img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .footer-layer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    left: -15%;
+    z-index: 0;
+    background: url(./assets/layer-cl.png) no-repeat;
+    background-position: bottom right;
+    background-size: 60%;
+    transform: rotate(320deg);
+    opacity: 0.1;
+  }
+  /* ============================================================ */
+
+
+
+  /* HERO VERSION 2 */
+  .hero-2 {
+    background-color: var(--bg-afeksi-theme);
+    background-image: url(./assets/hero-layer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+  }  
 }
-/* ============================================================ */
+/* END TABLETS ==========================================================================================*/
+
+/* FOR MOBILE ==========================================================================================*/
+@media only screen and (max-width: 767px) {
+  /* Navbar */
+  .nav-logo {
+    width: 85px;
+    margin: -20px -10px;
+  }
+  .navbar li {
+    font-size: 14px;
+  }
+  .nav-container {
+    margin: 0 5%;
+  }
+
+
+  /* HERO */
+  .hero {
+    background-color: var(--bg-afeksi-theme);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  /* ============ HERO LAYERS ================= */
+  .hero::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 400%;
+    top: -110%;
+    left: 60%;
+    background: url(./assets/layer.png) repeat-y;
+    background-size: 70%;
+    transform: rotate(30deg);
+    opacity: 0.1;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 300%;
+    top: -150%;
+    left: -80%;
+    background: url(./assets/layer.png) repeat-y;
+    background-size: 70%;
+    transform: rotate(20deg);
+    opacity: 0.1;
+    }
+
+  /* PRIVACY SECTION */
+
+  .accordion .accordion-item-custom {
+    margin: 3% 0;
+    border: 2px solid lightgrey; 
+    overflow: hidden;
+  }
+
+  .accordion .accordion-item-custom:hover {
+    border: 2px solid var(--bg-afeksi-theme); 
+  } 
+
+  .accordion .accordion-item-custom .accordion-body {
+    margin-top: -20px;
+    padding-bottom: 2%;
+    font-size: 14px;
+    /* width: 97%; */
+    margin-left: 5px;
+  }
+
+  .accordion-button-custom {
+    border: 0;
+    background-color: transparent;
+    padding: 2% 0;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    display: flex;
+    margin-left: 25px;
+  }
+  
+  .accordion-button-custom:hover {
+    color: var(--bg-afeksi-theme);
+  }
+  
+  .accordion-button-custom h2 {
+    font-size: 17px;
+    font-weight: bold;
+    width: 70%;
+  }
+
+  .arrow[aria-expanded="true"]::after {
+    font-family: "Bootstrap-icons";
+    content: "\F2EA";
+    position: absolute;
+    right: 50px;
+    font-weight: bold;
+  }
+
+  .arrow[aria-expanded="false"]::after {
+    font-family: "Bootstrap-icons";
+    content: "\F64D";
+    position: absolute;
+    right: 50px;
+    font-weight: bold;
+  }
+
+  /* footer */
+
+  .bg-footer-1 {
+    background: var(--bg-afeksi-theme);
+  }
+  .bg-footer-2 {
+    background: var(--bg-final-footer);
+  }
+
+  .mx-n1 {
+    margin-left: -1rem !important;
+  }
+  .justify-text {
+    text-align: justify;
+  }
+
+  /* ======= Fotter Layers ============ */
+  footer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer::before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 10%;
+    left: 50%;
+    z-index: 0;
+    background: url(./assets/layer.png) no-repeat;
+    background-position: bottom right;
+    background-size: 800px;
+    transform: rotate(105deg);
+    opacity: 0.1;
+  }
+
+  .w-custom {
+    width:95%!important;
+  }
+
+  .footer-layer{
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-layer img {
+    height: 15vh;
+  }
+  .footer-layer p {
+    font-size: 14px;
+  }
+  .footer-layer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0;
+    z-index: 0;
+    background: url(./assets/layer-cl.png) no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
+    transform: rotate(320deg);
+    opacity: 0.1;
+  }
+  /* ============================================================ */
 
 
 
-/* HERO VERSION 2 */
-.hero-2 {
-  background-color: var(--bg-afeksi-theme);
-  background-image: url(./assets/hero-layer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: 100% 100%;
-  color: white;
+  /* HERO VERSION 2 */
+  .hero-2 {
+    background-color: var(--bg-afeksi-theme);
+    background-image: url(./assets/hero-layer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+  }
 }
-
+/* END MOBILE ==========================================================================================*/
