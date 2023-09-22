@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashaboard Profile</title>
+    <link rel="stylesheet" href="css/dashboard-profile.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Tambahkan file CSS Flatpickr -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- swipper for slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Logo" class="d-inline-block align-text-top w-50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1" aria-labelledby="navbarOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-semibold text-uppercase" id="navbarOffcanvasLabel">Afeksi</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto my-lg-2 gap-1 mt-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beranda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Layanan & Produk</a>
+                <!-- <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button> -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Kegiatan</a>
+                <!-- <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button> -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Karir</a>
+              </li>
+            </ul>
+
+            <div class="ms-auto d-flex p-2 mx-lg-3 gap-2">
+              <div class="dropdown">
+                  <a class="text-primary" data-bs-toggle="dropdown" aria-expanded="false" href="#">Hi, Bimo<img src="assets/img/dashboard-profile/icon.png" class="ms-3"></a>
+                  <ul class="dropdown-menu mt-3">
+                    <li  class="mb-2"><a class="dropdown-item" href="#"><img src="assets/img/dashboard-profile/user-blue.svg" class="me-3" width = "20" height = "20" style="fill: #2139f9;"></img>Profile</a></li>
+        
+                    <li class="mb-2"><a class="dropdown-item" href="#"> <img src="assets/img/dashboard-profile/courses-blue.svg" width = "20" height = "20" style="fill: #2139f9;" class="me-3"></img> My Courses</a></li>
+        
+                    <li class="mb-2"><a class="dropdown-item" href="#"> <img src="assets/img/dashboard-profile/e-book-blue.svg" width = "20" height = "20" style="fill: #2139f9;" class="me-3"></img> My E-Book</a></li>
+        
+                    <li class="mb-2"><a class="dropdown-item" href="#"> <img src="assets/img/dashboard-profile/logout.svg" alt="" width = "20" height = "20" class="me-3">Logout</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="hero d-flex">
+        <div class="container-fluid py-4">
+          <div class="row justify-content-end">
+            <div class="col-lg-8">
+              <h4 class="fw-semibold mt-5">
+                <span>Welcome</span>, Bimo Setyo
+              </h4>
+              <p class="fw-light mt-3">
+                Untuk memudahkan proses konsultasi kamu, harap masukkan
+                informasi yang valid.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sidebar -->
+    <div class="card-dashboard navbar-expand-lg col-sm-5 col-lg-3 mt-4">
+      <button class="navbar-toggler sidebar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar" aria-controls="navbarOffcanvas">
+        <img src="assets/img/dashboard-profile/user.svg" class="card-img-top" alt="Dashboard " />
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="sideBar" aria-labelledby="thisSideBar">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card border-0">
+          <img src="assets/img/dashboard-profile/user.svg" id="profile" class="p-4 rounded-circle" alt="Dashboard " style="background-color: #cccccc; width: 35%;"/>
+          <div class="card-body">
+            <div class="card-title mb-5 ms-md-2">
+              <h5 class="fw-bold mb-1">Bimo Setyo</h5>
+              <p class="mb-3">bimo82374@gmail.com</p>
+            </div>
+  
+            <div class="col-md-12 col-lg-12 d-md-block dashboard-menu mb-3">
+              <div class="position-sticky">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-3">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/dashboard-profile/dashboard.svg" alt="Dashboard" />
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link active" href="#">
+                      <img src="assets/img/dashboard-profile/user-blue.svg" alt="Dashboard" />
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/dashboard-profile/voucher.svg" alt="Dashboard" />
+                      Voucher
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/dashboard-profile/courses.svg" alt="Dashboard" />
+                      My Courses
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/dashboard-profile/e-book.svg" alt="Dashboard" />
+                      My E-Book
+                    </a>
+                  </li>
+                  <li class="nav-item mb-3">
+                    <a class="nav-link" href="#">
+                      <img src="assets/img/dashboard-profile/transaction.svg" alt="Dashboard" />
+                      Rekap Transaksi
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    
+   
+    <!-- end Sidebar -->
+
+    <!-- MAIN --->
+    <main>
+      <div class="row mt-5 mx-1 me-lg-5 justify-content-end">
+        <form class="col-lg-8">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <!-- Nama Lengkap -->
+                <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaLengkap"
+                  placeholder="Masukkan Nama Lengkap"
+                />
+              </div>
+              <div class="mb-3">
+                <!-- Email -->
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Masukkan Email"
+                />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tanggalLahir"
+                    placeholder="Pilih Tanggal Lahir"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="noHP" class="form-label">No. HP</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="noHP"
+                  placeholder="Masukkan No. HP"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pekerjaan"
+                  placeholder="Pekerjaan Kamu"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="mb-3">
+                <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                <select class="form-select" id="jenisKelamin">
+                  <option hidden>Pilihan</option>
+                  <option value="laki">Laki-laki</option>
+                  <option value="perempuan">Perempuan</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="kota" class="form-label">Kota</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="kota"
+                  placeholder="Masukkan Kota"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="instansi" class="form-label">Instansi</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="instansi"
+                  placeholder="Instansi Kamu"
+                />
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <div class="d-flex my-md-5 my-4 gap-3">
+                    <button type="submit" class="btn btn-outline-primary">
+                      Ubah Password
+                    </button>
+                    <button type="submit" class="btn btn-outline-primary">
+                      Ubah Foto Profile
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-md">
+                  <div class="my-md-5 pb-5">
+                    <button type="submit" class="btn btn-primary w-100">
+                      Simpan Perubahan
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- end-main ======================================== -->
+      
+    <footer class="p-5" style="background-image: url()">
+        <div class="container content-footer">
+          <div class="row d-flex gap-5 align-content-center">
+            <div class="col-lg-4 bg-white rounded-4 p-4">
+              <div class="d-flex text-muted mb-2">
+                <div class="me-2">
+                  <img src="assets/img/logo.png" alt="Logo" width="100" />
+                </div>
+                <div style="font-size: 15px">
+                  <p>
+                    Afeksi adalah layanan edukasi dan konsultasi kesehatan
+                    hubungan berbasis psikologi relasi pertama di Indonesia.
+                  </p>
+                </div>
+              </div>
+              <p class="mb-2 fw-bold" style="color: #2139f9">
+                Layanan Contact Center AFEKSI
+              </p>
+              <div class="d-flex flex-column">
+                <div class="mb-2">
+                  <img
+                    src="{{ asset('assets/img/footer/phone.png') }}"
+                    class="me-3 contact-img"
+                    alt=""
+                  />+6282142625552
+                </div>
+                <div class="mb-2">
+                  <img
+                    src="{{ asset('assets/img/footer/email.png') }}"
+                    class="me-3 contact-img"
+                    alt=""
+                  />afeksidn@gmail.com
+                </div>
+                <div>
+                  <img
+                    src="{{ asset('assets/img/footer/location.png') }}"
+                    class="me-3 contact-img"
+                    alt=""
+                  />Jl. Gubeng Jaya IX no.1 Surabaya, Indonesia
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-7">
+              <div class="d-flex flex-wrap">
+                <div class="text-white mb-4 me-3 flex-fill">
+                  <h5 class="link-title mb-4 fw-bold">Layanan</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Konseling</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Mentoring</a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="text-white mb-4 me-3 flex-fill">
+                  <h5 class="link-title mb-4 fw-bold">Tentang kami</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Tentang kami</a>
+                    </li>
+                    <li class="mb-3"><a href="#" class="text-white">Karir</a></li>
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Campaign</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Webinar</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Rekap Histori</a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="text-white mb-4 me-3 flex-fill">
+                  <h5 class="link-title mb-4 fw-bold">Yang lainnya</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <a href="#" class="text-white">Kebijakan Privasi</a>
+                    </li>
+                    <li><a href="#" class="text-white">FAQ</a></li>
+                  </ul>
+                </div>
+  
+                <div class="text-white mb-4 flex-fill">
+                  <h5 class="link-title mb-4 fw-bold">Ikuti Kami</h5>
+                  <ul class="list-unstyled d-flex flex-wrap">
+                    <img
+                      src="assets/img/footer/Vector (1).png"
+                      alt=""
+                      class="contact-img me-2 mb-3"
+                    />
+                    <img
+                      src="assets/img/footer/Vector (2).png"
+                      alt=""
+                      class="contact-img me-2 mb-3"
+                    />
+                    <img
+                      src="assets/img/footer/Vector (3).png"
+                      alt=""
+                      class="contact-img me-2 mb-3"
+                    />
+                    <img
+                      src="assets/img/footer/Vector (4).png"
+                      alt=""
+                      class="contact-img me-2 mb-3"
+                    />
+                    <img
+                      src="assets/img/footer/Vector (5).png"
+                      alt=""
+                      class="contact-img me-2 mb-3"
+                    />
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="fw-bold bottom">
+          © 2023 AFEKSI IDN | Edukasi & Konsultasi Relasi #1
+        </div>
+      </footer>
+      
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr("#tanggalLahir", {
+                dateFormat: "d/m/Y", // Format tanggal yang diinginkan
+                locale: "id", // Lokal Bahasa Indonesia
+                altInput: true, // Menggunakan input alternatif yang mudah diisi
+                altFormat: "j F Y", // Format input alternatif
+                allowInput: true // Memungkinkan pengguna menginputkan tanggal langsung
+            });
+        });
+        
+        // sidebar toggle
+        function hasClass(ele, cls) {
+        return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+        }
+
+        function addClass(ele, cls) {
+            if (!hasClass(ele, cls)) ele.className += " " + cls;
+        }
+
+        function removeClass(ele, cls) {
+            if (hasClass(ele, cls)) {
+                var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+                ele.className = ele.className.replace(reg, ' ');
+            }
+        }
+
+        //Add event from js the keep the marup clean
+        function init() {
+            document.getElementById("open-menu").addEventListener("click", toggleMenu);
+            document.getElementById("body-overlay").addEventListener("click", toggleMenu);
+        }
+
+        //The actual fuction
+        function toggleMenu() {
+            var ele = document.getElementsByTagName('body')[0];
+            if (!hasClass(ele, "menu-open")) {
+                addClass(ele, "menu-open");
+            } else {
+                removeClass(ele, "menu-open");
+            }
+        }
+
+        //Prevent the function to run before the document is loaded
+        document.addEventListener('readystatechange', function() {
+            if (document.readyState === "complete") {
+                init();
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/external-svg-loader@1.0.0/svg-loader.min.js"
+      async
+    ></script>
+    <!-- Tambahkan file JavaScript Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
