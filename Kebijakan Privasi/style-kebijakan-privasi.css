@@ -1,7 +1,7 @@
 :root {
-  --bg-afeksi-theme: #5A74FD;
-  --color-afeksi-custom: #374DFA;
-  --bg-final-footer: #4959DB;
+  --bg-afeksi-theme: #5a74fd;
+  --color-afeksi-custom: #374dfa;
+  --bg-final-footer: #4959db;
 }
 
 * {
@@ -13,20 +13,59 @@
   color: var(--color-afeksi-custom);
 }
 
- /* FOR DESKTOP ========================================================================================== */
+/* FOR DESKTOP ========================================================================================== */
 @media only screen and (min-width: 991px) {
   /* Navbar */
-  .nav-logo {
-    width: 8vw;
-    margin: -20px -10px;
-  }
-  .navbar li {
-    font-size: 1.25vw;
-  }
-  .nav-container {
-    margin: 0 5%;
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif !important;
+    text-decoration: none !important;
   }
 
+  /* NAVBAR */
+  .navbar {
+    box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+  }
+  .navbar li a {
+    color: #94a8be;
+  }
+
+  div .button-daftar {
+    border-color: #233dff;
+    color: #233dff;
+    width: 95px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  div .button-login {
+    background-color: #233dff;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 95px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .button-daftar:hover {
+    transform: scale(1.1);
+  }
+
+  .button-login:hover {
+    transform: scale(1.1);
+    background: #233dff;
+  }
+
+  .button-daftar:focus {
+    outline: none;
+  }
+
+  .button-login:focus {
+    outline: #233dff;
+  }
+  /* End Navbar */
 
   /* HERO */
   .hero {
@@ -35,7 +74,6 @@
     position: relative;
     overflow: hidden;
   }
-
 
   /* ============ HERO LAYERS ================= */
   .hero::after {
@@ -70,12 +108,12 @@
 
   .accordion .accordion-item-custom {
     margin: 2% 0;
-    border: 2px solid lightgrey; 
+    border: 2px solid lightgrey;
   }
 
   .accordion .accordion-item-custom:hover {
-    border: 2px solid var(--bg-afeksi-theme); 
-  } 
+    border: 2px solid var(--bg-afeksi-theme);
+  }
 
   .accordion .accordion-item-custom .accordion-body {
     margin-top: -20px;
@@ -159,7 +197,7 @@
     opacity: 0.1;
   }
 
-  .footer-layer{
+  .footer-layer {
     position: relative;
     overflow: hidden;
   }
@@ -180,8 +218,6 @@
   }
   /* ============================================================ */
 
-
-
   /* HERO VERSION 2 */
   .hero-2 {
     background-color: var(--bg-afeksi-theme);
@@ -191,8 +227,9 @@
     background-position: center;
     background-size: 100% 100%;
     color: white;
-  } 
+  }
 }
+
 /* END DESKTOP ==========================================================================================*/
 
 /* FOR TABLETS ==========================================================================================*/
@@ -216,7 +253,6 @@
     position: relative;
     overflow: hidden;
   }
-
 
   /* ============ HERO LAYERS ================= */
   .hero::after {
@@ -247,12 +283,12 @@
   /* PRIVACY SECTION */
   .accordion .accordion-item-custom {
     margin: 2% 0;
-    border: 2px solid lightgrey; 
+    border: 2px solid lightgrey;
   }
 
   .accordion .accordion-item-custom:hover {
-    border: 2px solid var(--bg-afeksi-theme); 
-  } 
+    border: 2px solid var(--bg-afeksi-theme);
+  }
 
   .accordion .accordion-item-custom .accordion-body {
     margin-top: -20px;
@@ -325,21 +361,21 @@
   }
 
   footer::before {
-  content: "";
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  top: -50%;
-  left: 85%;
-  z-index: 0;
-  background: url(./assets/layer.png) no-repeat;
-  background-position: bottom right;
-  background-size: 600px;
-  transform: rotate(100deg);
-  opacity: 0.1;
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: -50%;
+    left: 85%;
+    z-index: 0;
+    background: url(./assets/layer.png) no-repeat;
+    background-position: bottom right;
+    background-size: 600px;
+    transform: rotate(100deg);
+    opacity: 0.1;
   }
 
-  .footer-layer{
+  .footer-layer {
     position: relative;
     overflow: hidden;
   }
@@ -365,8 +401,6 @@
   }
   /* ============================================================ */
 
-
-
   /* HERO VERSION 2 */
   .hero-2 {
     background-color: var(--bg-afeksi-theme);
@@ -376,7 +410,7 @@
     background-position: center;
     background-size: 100% 100%;
     color: white;
-  }  
+  }
 }
 /* END TABLETS ==========================================================================================*/
 
@@ -394,7 +428,6 @@
     margin: 0 5%;
   }
 
-
   /* HERO */
   .hero {
     background-color: var(--bg-afeksi-theme);
@@ -402,7 +435,6 @@
     position: relative;
     overflow: hidden;
   }
-
 
   /* ============ HERO LAYERS ================= */
   .hero::after {
@@ -428,19 +460,19 @@
     background-size: 70%;
     transform: rotate(20deg);
     opacity: 0.1;
-    }
+  }
 
   /* PRIVACY SECTION */
 
   .accordion .accordion-item-custom {
     margin: 3% 0;
-    border: 2px solid lightgrey; 
+    border: 2px solid lightgrey;
     overflow: hidden;
   }
 
   .accordion .accordion-item-custom:hover {
-    border: 2px solid var(--bg-afeksi-theme); 
-  } 
+    border: 2px solid var(--bg-afeksi-theme);
+  }
 
   .accordion .accordion-item-custom .accordion-body {
     margin-top: -20px;
@@ -460,11 +492,11 @@
     display: flex;
     margin-left: 25px;
   }
-  
+
   .accordion-button-custom:hover {
     color: var(--bg-afeksi-theme);
   }
-  
+
   .accordion-button-custom h2 {
     font-size: 17px;
     font-weight: bold;
@@ -525,10 +557,10 @@
   }
 
   .w-custom {
-    width:95%!important;
+    width: 95% !important;
   }
 
-  .footer-layer{
+  .footer-layer {
     position: relative;
     overflow: hidden;
   }
@@ -553,8 +585,6 @@
     opacity: 0.1;
   }
   /* ============================================================ */
-
-
 
   /* HERO VERSION 2 */
   .hero-2 {
