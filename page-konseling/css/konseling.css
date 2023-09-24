@@ -1,8 +1,9 @@
 /* NAVBAR */
 .navbar {
   box-shadow: 0px 13px 40px 0px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 2;
   width: 100%;
+  position: fixed !important;
 }
 .navbar li a {
   color: #94a8be;
@@ -281,7 +282,7 @@ span {
   }
   .bg-card-custom img {
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 }
 
@@ -317,4 +318,79 @@ footer {
 
 .content-footer {
   margin-bottom: 55px;
+}
+
+/* POPUP */
+
+.popup p {
+  font-size: 1.2em;
+  height: 15em;
+}
+.popup,
+p,
+h1,
+h2,
+h3 {
+  color: yellow;
+}
+
+.button-popup {
+  width: 25em;
+}
+
+.list-popup {
+  position: relative;
+  width: 75%;
+}
+.list-popup li {
+  list-style-type: none;
+}
+.list-popup li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #0623f8;
+  left: 20px;
+  border-radius: 30px;
+}
+
+.--bg-1 {
+  background: url("../assets/img/konseling/popup/pop-1.jpg") no-repeat;
+  background-size: 100% 110vh;
+  height: 110vh;
+  width: 30em;
+}
+.--bg-2 {
+  background: url("../assets/img/konseling/popup/pop-2.jpg") no-repeat;
+  background-size: 100% 110vh;
+  height: 110vh;
+  width: 30em;
+}
+
+@media (max-width: 1000px) {
+  .popup p {
+    height: 20em;
+  }
+  .--bg-1,
+  .--bg-2 {
+    width: 100%;
+    background-size: 100% 140vh;
+    height: 140vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .popup p {
+    font-size: 1em;
+    height: 23em;
+  }
+
+  .button-popup {
+    width: 100%;
+  }
+
+  .list-popup {
+    width: 100%;
+  }
 }
